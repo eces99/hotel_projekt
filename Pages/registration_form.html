@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="/images/hotel_logo.svg">
+</head>
+<body>
+    <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
+    <style>
+        body {
+          background-image: url(/images/hotel_logo.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-color: rgba(255,255,255,0.85);
+          background-blend-mode: lighten;
+        }
+    </style>
+
+    <!-- Zentriert das Textlayout in der div horizontal -->
+    <style>
+        h1 {text-align: center;}
+        footer {text-align: center;}
+    </style>
+
+    <header>
+        <h1>Registrierung</h1>
+    </header>
+    
+    <!-- Die Action-Method muss bei der Übertragung auf den PHP-Server noch angepasst werden. (Wahrscheinlich "Post"; vielleicht auch Dialog?) -->
+    <form action="registration_results.html" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Gewünschter Benutzername" required/>
+        </div>
+        <div>
+            <label for="password">Passwort</label>
+            <input type="password" name="password" id="name" required/>
+        </div>
+        <div>
+            <label for="email">E-Mail Adresse</label>
+            <input type="email" name="email" id="email" required/>
+        </div>
+        <div>
+            <label for="birthday">Geburtsdatum</label>
+            <input type="date" name="birthday" id="birthday"/>
+        </div>
+        <div>
+            <label>Account-Typ</label>
+            <div>
+                <input type="radio" name="accounttype" id="businessAccount" value="businessAccount" required/>
+                <label for="businessAccount">Geschäftlich</label>
+                <input type="radio" name="accounttype" id="privateAccount" value="privateAccount" required/>
+                <label for="privateAccount">Privat</label>
+                <input type="radio" name="accounttype" id="business" value="business" required/>
+                <label for="business">Business</label>
+            </div>
+        </div>
+        <div>
+            <input type="date" name="birthday" id="birthday"/>
+        </div>
+
+        <button type="submit">Registrieren</button>
+    </form>
+    <p style="margin-bottom: 10%;"></p>
+    <div>
+        <footer>
+        <a href="/Pages/impressum.html" target="_blank">Impressum</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/Pages/faq_hilfe.html" target="_blank">FAQ & Hilfe</a>
+        </footer>
+        <!-- Fügt die Verlinkung zur Impressums-Seite (etc.) im Fußbereich (Footer) hinzu. -->
+    <p style="margin-bottom: 5%;"></p>
+    </div>
+</body>
+</html>

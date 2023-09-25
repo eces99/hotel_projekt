@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Optimiert die Webseitendarstellung auf verschiedenen Geräten durch Anpassung der Bildschirmbreite und Zoom-Einstellungen. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
+    <!-- Fügt das Logo-Bild als FavIcon hinzu --> 
     <link rel="icon" type="image/x-icon" href="/images/hotel_logo.svg">
-    <!-- Fügt das Logo-Bild als FavIcon hinzu -->
 </head>
 <body>
+    <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
     <style>
         body {
           background-image: url(/images/hotel_logo.png);
@@ -19,13 +20,12 @@
           background-blend-mode: lighten;
         }
     </style>
-    <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
 
+    <!-- Zentriert das Textlayout in der div horizontal -->
     <style>
         h1 {text-align: center;}
         div {text-align: center;}
     </style>
-    <!-- Zentriert das Textlayout in der div horizontal -->
     <header>
         <h1>Impressum</h1>
     </header>
@@ -59,6 +59,7 @@
         <b>Anliegen: Information über Hotellerie</b></br>
         <p style="margin-bottom: 5%;"></p>
      
+        <!-- Dieses Layout soll noch besser in Main/Article/Sections gegliedert werden, sodass die Bilder auf einer Höhe nebeneinander perfekt zentriert stehen können. In der aktuellen Version liegt noch kein CSS vor, also war eine temporäre kompliziertere Layout-Umsetzung nicht zielführend."-->
         <section>
             <img src="/images/AboutUsBen.jpg" style="width: 10%;" alt="Benjamin Minkowitsch"></br>
             Benjamin Minkowitsch</br>
@@ -74,8 +75,8 @@
             E-mail: <a href="mailto:if23b062@technikum-wien.at">if23b062@technikum-wien.at</a></br>
             <p style="margin-bottom: 5%;"></p>
         </section>
-        <!-- Dieses Layout soll noch besser in Main/Article/Sections gegliedert werden, sodass die Bilder auf einer Höhe nebeneinander perfekt zentriert stehen können. In der aktuellen Version liegt noch kein CSS vor, also war eine temporäre kompliziertere Layout-Umsetzung nicht zielführend."-->
     </div>
+    <!-- Fügt die Verlinkung zur Impressums-Seite (etc.) im Fußbereich (Footer) hinzu. -->
     <div>
         <footer>
             <a href="/Pages/impressum.html" target="_blank">Impressum</a>
@@ -84,6 +85,5 @@
         </footer>
     <p style="margin-bottom: 5%;"></p>
     </div>
-    <!-- Fügt die Verlinkung zur Impressums-Seite (etc.) im Fußbereich (Footer) hinzu. -->
 </body>
 </html>
