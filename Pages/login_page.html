@@ -12,10 +12,9 @@
         <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
         <style>
             body {
-              background-image: url(../Images/hotel_logo.png);
+              background-image: url(../Images/hotel_logo.png); 
               background-repeat: no-repeat;
               background-size: cover;
-              background-position: center;
               background-color: rgba(255,255,255,0.85);
               background-blend-mode: lighten;
             }
@@ -23,15 +22,18 @@
 
 </head>
 <body>
+    <!-- Bin mir ziemlich sicher, dass die StyDeinition entweder hierhin gehört, oder zumindest nach </head> -->
     <header>
         <h1>Login</h1>
     </header>
-    <form>
-        <label for="username">Username:</label><br>
+    <div>
+    <form action="login_results.html" method="get">
+        <label for="username">Username</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="passwort">Passwort</label><br>
         <input type="password" id="passwort" name="passwort"><br>
         <input type="submit" value="Login">
     </form>
+</div>
 </body>
 </html>
