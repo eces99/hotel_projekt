@@ -31,6 +31,19 @@
     
     <!-- Die Action-Method muss bei der Übertragung auf den PHP-Server noch angepasst werden. (Wahrscheinlich "Post"; vielleicht auch Dialog?) -->
     <form action="registration_results.html" method="get">
+
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Gewünschter Benutzername" required/>
+        </div>
+        <div>
+            <label for="password">Passwort</label>
+            <input type="password" name="password" id="password" required />
+        </div>
+        <div>
+            <label for="password">Confirm passwort</label>
+            <input type="password" name="password" id="confirm_password" required/>
+        </div>
         <div>
             <label>Anrede</label>
             <input type="radio" name="anrede" id="male" value="male"/>
@@ -39,19 +52,6 @@
             <label for="female">Frau</label>
             <input type="radio" name="anrede" id="diverse" value="diverse"/>
             <label for="diverse">Non-Binary / Trans / Divers</label>
-        </div>
-
-        <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Gewünschter Benutzername" required/>
-        </div>
-        <div>
-            <label for="password">Passwort</label>
-            <input type="password" name="password" id="password" required/>
-        </div>
-        <div>
-            <label for="password">Passwort</label>
-            <input type="password" name="password" id="password" required/>
         </div>
         <div>
             <label for="name_first">Vorname</label>
@@ -90,9 +90,9 @@
     <p style="margin-bottom: 10%;"></p>
     <div>
         <footer>
-        <a href="../Pages/impressum.html" target="_blank">Impressum</a>
+        <a href="./impressum.html" target="_blank">Impressum</a>
             &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="../Pages/faq_hilfe.html" target="_blank">FAQ & Hilfe</a>
+            <a href="./faq_hilfe.html" target="_blank">FAQ & Hilfe</a>
         </footer>
         <!-- Fügt die Verlinkung zur Impressums-Seite (etc.) im Fußbereich (Footer) hinzu. -->
     <p style="margin-bottom: 5%;"></p>
