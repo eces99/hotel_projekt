@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Hier werden übergangsmäßig testhalber die Formular-Resultate gespeichert.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fügt das Logo-Bild als FavIcon hinzu --> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="/images/hotel_logo.svg">
+    <title>registrationResults</title>
+</head>
+<body>
+    <div id="registrationResults"></div>
+    <a href="/Pages/registration_form.html">Back to Form</a>
+    <script>
+        const resultsList = document.getElementById('registrationResults')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
