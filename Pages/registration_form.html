@@ -32,12 +32,30 @@
     <!-- Die Action-Method muss bei der Übertragung auf den PHP-Server noch angepasst werden. (Wahrscheinlich "Post"; vielleicht auch Dialog?) -->
     <form action="registration_results.html" method="get">
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Gewünschter Benutzername" required/>
+            <label>Anrede</label>
+            <input type="radio" name="anrede" id="male" value="male"/>
+            <label for="male">Herr</label>
+            <input type="radio" name="anrede" id="female" value="female"/>
+            <label for="female">Frau</label>
+            <input type="radio" name="anrede" id="diverse" value="diverse"/>
+            <label for="diverse">Non-Binary / Trans / Divers</label>
+        </div>
+
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Gewünschter Benutzername" required/>
         </div>
         <div>
             <label for="password">Passwort</label>
-            <input type="password" name="password" id="name" required/>
+            <input type="password" name="password" id="password" required/>
+        </div>
+        <div>
+            <label for="name_first">Vorname</label>
+            <input type="text" name="name_first" id="name_first" placeholder="Vorname" required/>
+        </div>
+        <div>
+            <label for="name_last">Name</label>
+            <input type="text" name="name_last" id="name_last" placeholder="Familienname" required/>
         </div>
         <div>
             <label for="email">E-Mail Adresse</label>
@@ -58,8 +76,9 @@
                 <label for="business">Business</label>
             </div>
         </div>
+        <!-- User registration session metadata placeholder -->
         <div>
-            <input type="date" name="birthday" id="birthday"/>
+            <input type="hidden" name="usermetadata" value="placeholder"/>
         </div>
 
         <button type="submit">Registrieren</button>
