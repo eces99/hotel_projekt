@@ -1,4 +1,6 @@
 /* General */
+
+/* Margin needs to be limited to more specific elements; currently bugs out in places that shouldn't have margins, like the footer.*/
 * {
     margin-left: 5px;
 }
@@ -6,6 +8,17 @@
 header {
     margin: 20px;
 }
+
+body {
+    background-image: url(../Images/hotel_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255,255,255,0.85);
+background-blend-mode: lighten;
+}
+
+/* Background needs colour; once background colour (dark or light) is chosen, matching font colours can be determined. */
 
 ul, ol {
 	padding: 5px;
@@ -51,9 +64,9 @@ h1 {
 }
 
 
-/* Navigation */
+/* "About" footer */
 
-.nav {
+body > footer {
 	background: #222736;
 	padding: 80px 0 30px;
 	margin-bottom: 30px;
@@ -62,12 +75,12 @@ h1 {
 
 /* Can be added: quick contact information */
 
-.nav {
+body > footer {
     display: flex;
     gap: 0.5rem;
   }
   
-  .nav a {
+  body > footer a {
     flex: auto;
     background-color: #333;
     color: #fff;
@@ -78,8 +91,8 @@ h1 {
     transition: all 0.5s ease-out;
   }
   
-  .nav a:hover,
-  .nav a:focus {
+  body > footer a:hover,
+  body > footer a:focus {
     background-color: #fff;
     color: #333;
   }
