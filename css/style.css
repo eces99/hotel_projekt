@@ -1,0 +1,86 @@
+/* General */
+* {
+    margin-left: 5px;
+}
+
+header {
+    margin: 20px;
+}
+
+ul, ol {
+	padding: 5px;
+	margin: 5px;
+}
+
+h1, h2, h3 {
+	color: #111111;
+	font-weight: 700;
+	font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: #5C4033;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.faq-page {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.impressum-page {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login-page {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.registration-page {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Navigation */
+
+.nav {
+	background: #222736;
+	padding: 80px 0 30px;
+	margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Can be added: quick contact information */
+
+.nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .nav a {
+    flex: auto;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  .nav a:hover,
+  .nav a:focus {
+    background-color: #fff;
+    color: #333;
+  }
+  

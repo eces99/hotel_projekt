@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="icon" type="image/x-icon" href="../Images/hotel_logo.png">
+</head>
+<body>
+    <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
+    <style>
+        body {
+          background-image: url(../Images/hotel_logo.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-color: rgba(255,255,255,0.85);
+          background-blend-mode: lighten;
+        }
+    </style>
+    <header>
+        <h1>Registrierung</h1>
+    </header>
+    
+    <!-- Die Action-Method muss bei der Übertragung auf den PHP-Server noch angepasst werden. (Wahrscheinlich "Post"; vielleicht auch Dialog?) -->
+    <div class="registration-page">
+    <form action="registration_results.html" method="get">
+            <label for="username">Username</label></br>
+            <input type="text" name="username" id="username" placeholder="Gewünschter Benutzername" required/></br>
+    
+            <label for="password">Passwort</label></br>
+            <input type="password" name="password" id="password" required /></br>
+       
+            <label for="password">Confirm passwort</label></br>
+            <input type="password" name="password" id="confirm_password" required/></br>
+       
+            <label>Anrede</label></br>
+            <input type="radio" name="anrede" id="male" value="male"/>
+            <label for="male">Herr</label>
+            <input type="radio" name="anrede" id="female" value="female"/>
+            <label for="female">Frau</label>
+            <input type="radio" name="anrede" id="diverse" value="diverse"/>
+            <label for="diverse">Non-Binary / Trans / Divers</label>
+       
+            <label for="name_first">Vorname</label></br>
+            <input type="text" name="name_first" id="name_first" placeholder="Vorname" required/></br>
+        
+            <label for="name_last">Name</label></br>
+            <input type="text" name="name_last" id="name_last" placeholder="Familienname" required/></br>
+      
+            <label for="email">E-Mail Adresse</label></br>
+            <input type="email" name="email" id="email" required/></br>
+        
+            <label for="birthday">Geburtsdatum</label></br>
+            <input type="date" name="birthday" id="birthday"/></br>
+
+            <label>Account-Typ</label></br>
+
+                <input type="radio" name="accounttype" id="businessAccount" value="businessAccount" required/>
+                <label for="businessAccount">Geschäftlich</label>
+                <input type="radio" name="accounttype" id="privateAccount" value="privateAccount" required/>
+                <label for="privateAccount">Privat</label>
+                <input type="radio" name="accounttype" id="business" value="business" required/>
+                <label for="business">Business</label>
+        </div>
+        <!-- User registration session metadata placeholder -->
+        <div>
+            <input type="hidden" name="usermetadata" value="placeholder"/>
+        </div>
+
+        <button type="submit">Registrieren</button>
+    </form>
+    <p style="margin-bottom: 10%;"></p>
+    
+        <div class="nav">
+            <a href="../Pages/impressum.html" target="_blank">Impressum</a>
+            <a href="../Pages/faq_hilfe.html" target="_blank">FAQ & Hilfe</a><err>
+            </div>
+</body>
+</html>
