@@ -5,33 +5,15 @@
     <!-- Optimiert die Webseitendarstellung auf verschiedenen Geräten durch Anpassung der Bildschirmbreite und Zoom-Einstellungen. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
-    <!-- Fügt das Logo-Bild als FavIcon hinzu --> 
+    <link rel="stylesheet" href="../css/style.css">  
     <link rel="icon" type="image/x-icon" href="../Images/hotel_logo.png">
 </head>
 <body>
-    <!-- Fügt das Logo als Wasserzeichen im Hintergrund ein. -->
-    <style>
-        body {
-          background-image: url(../Images/hotel_logo.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-          background-color: rgba(255,255,255,0.85);
-          background-blend-mode: lighten;
-        }
-    </style>
-
-    <!-- Zentriert das Textlayout in der div horizontal -->
-    <style>
-        h1 {text-align: center;}
-        div {text-align: center;}
-    </style>
     <header>
         <h1>Impressum</h1>
     </header>
-    <div>
-        <p>
-        Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz </p>
+        <div class="impressum-page">
+        Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz</br>
         Hotel Moonlight GmbH </br>
         Hotellerie </br>
         UID-Nr: ATU12345678</br>
@@ -39,7 +21,7 @@
         Sitz: 1210 Wien</br>
         Höchstädtpl. 6, 1210 Wien, Österreich</br>
         Tel: +43 664 250 2995<br>
-        E-mail: <a href="mailto:if23b226@technikum-wien.at">if23b226@technikum-wien.at</a></p>
+        E-mail: <a href="mailto:if23b226@technikum-wien.at">if23b226@technikum-wien.at</a>
         FB-Gericht: Wien</br>
         Mitglied der WKÖ, WKNÖ, Landesinnung
         Hotellerie, Bundesinnung Hotellerie<br>
@@ -48,24 +30,21 @@
         Gewerbeordnung: <a href="http://www.ris.bka.gv.at">www.ris.bka.gv.at</a></br>
         Bezirkshauptmannschaft Wien</br>
         Meisterbetrieb</br>
-        Meisterprüfung abgelegt in Österreich</p>
+        Meisterprüfung abgelegt in Österreich
         Verbraucher haben die Möglichkeit, Beschwerden an die OnlineStreitbeilegungsplattform 
         der EU zu richten: <a href="http://ec.europa.eu/odr">ec.europa.eu/odr</a>. </br>
         Sie können allfällige Beschwerde auch an die oben angegebene E-Mail-Adresse richten.
-        <p style="margin-bottom: 2%;"></p>
         Geschäftsführer: Benjamin Minkowitsch: </br> 
         Gesellschaftsanteile:  Benjamin Minkowitsch (50 %), Ece Sen (50 %) </br>
         </br>
-        <b>Anliegen: Information über Hotellerie</b></br>
-        <p style="margin-bottom: 5%;"></p>
-     
+        <b>Anliegen: Information über Hotellerie</b></br>     
         <!-- Dieses Layout soll noch besser in Main/Article/Sections gegliedert werden, sodass die Bilder auf einer Höhe nebeneinander perfekt zentriert stehen können. In der aktuellen Version liegt noch kein CSS vor, also war eine temporäre kompliziertere Layout-Umsetzung nicht zielführend."-->
         <section>
             <img src="../Images/AboutUsBen.jpg" style="width: 10%;" alt="Benjamin Minkowitsch"></br>
             Benjamin Minkowitsch</br>
             Mobil: +43 664 250 29 95</br>
             E-mail: <a href="mailto:if23b226@technikum-wien.at">if23b226@technikum-wien.at</a></br>
-            <p style="margin-bottom: 2%;"></p>
+        
         </section>
   
         <section>
@@ -76,14 +55,11 @@
             <p style="margin-bottom: 5%;"></p>
         </section>
     </div>
-    <!-- Fügt die Verlinkung zur Impressums-Seite (etc.) im Fußbereich (Footer) hinzu. -->
-    <div>
-        <footer>
-            <a href="../Pages/impressum.html" target="_blank">Impressum</a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="../Pages/faq_hilfe.html" target="_blank">FAQ & Hilfe</a><err>
-        </footer>
-    <p style="margin-bottom: 5%;"></p>
-    </div>
+    <!--Can be extended with Home About Us Contact Links...-->
+    <footer>
+        <a href="./impressum_d.html" target="_blank">Impressum</a>
+        <a href="./faq_hilfe_d.html" target="_blank">FAQ & Hilfe</a>
+    </footer>
+    
 </body>
 </html>
