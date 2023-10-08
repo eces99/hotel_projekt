@@ -80,7 +80,7 @@ body > footer {
     gap: 0.5rem;
   }
   
-  body > footer a {
+body > footer a {
     flex: auto;
     background-color: #333;
     color: #fff;
@@ -89,11 +89,40 @@ body > footer {
     text-align: center;
     text-decoration: none;
     transition: all 0.5s ease-out;
-  }
+}
   
   body > footer a:hover,
   body > footer a:focus {
     background-color: #fff;
     color: #333;
   }
+
+/* FAQ */
+
+  summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition:all 3s ease-in-out;
+  }
   
+  summary::-webkit-details-marker {
+    display: flex;
+  }
+  
+  summary:after{
+    content: "\002B";
+  }
+  
+  details[open] summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: .5em;
+      transition:all 3s ease-in-out;
+  }
+  
+  details[open] summary:after{
+    content: "\00D7";
+    transition:all 3s ease-in-out;
+
+  }
