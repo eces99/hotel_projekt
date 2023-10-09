@@ -68,12 +68,18 @@ h1 {
 }
 
 .faq{
-  font-size: 16px;;
+  font-size: 16px;
 }
 
 .impressum-page {
   text-align: center;
   font-size: 16px;
+}
+
+img{
+  width: 30%;
+  height: auto;
+
 }
 
 .login-page {
@@ -175,4 +181,96 @@ details[open] summary {
 
 details[open] summary:after{
   content: "\00D7";
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  img{
+    width: 30%;
+    height: auto;
+
+  }
+
+}
+
+/*For small screens*/
+
+@media (max-width: 480px) {
+  
+  header {
+    margin: 0px;
+    font-size: small;
+  }
+
+
+  ul, ol {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container {
+    font-size: 18px;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .inhalt.container {
+    background-color: #8ca0ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq{
+    font-size: 16px;
+  }
+  
+  .impressum-page {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .login-page {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  
+  .registration-page {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  img{
+    width: 60%;
+    height: auto;
+
+  }
+  
+  /* to add space before: */
+  
+  .registration-page form label:before {
+    display: block;
+    content: " ";
+    padding-top: 10px;
+  }
+  
+  .login-page form label:before {
+    display: block;
+    content: " ";
+    padding-top: 5%;
+  }
+  
+  button{
+    margin-top: 5%;
+    font-size: 16px;
+  }
+  
+
 }
