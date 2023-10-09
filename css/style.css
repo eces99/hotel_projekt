@@ -96,6 +96,12 @@ h1 {
   padding-top: 10px;
 }
 
+.login-page form label:before {
+  display: block;
+  content: " ";
+  padding-top: 5%;
+}
+
 button{
   margin-top: 5%;
   font-size: 16px;
