@@ -1,10 +1,5 @@
 /* General */
 
-/* Margin needs to be limited to more specific elements; currently bugs out in places that shouldn't have margins, like the footer.*/
-* {
-    margin-left: 5px;
-}
-
 header {
     margin: 20px;
 }
@@ -12,37 +7,64 @@ header {
 body {
     background-image: url(../Images/hotel_logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-color: rgba(255,255,255,0.85);
-background-blend-mode: lighten;
+    background-blend-mode: lighten;
+   
 }
 
 /* Background needs colour; once background colour (dark or light) is chosen, matching font colours can be determined. */
+
 
 ul, ol {
 	padding: 5px;
 	margin: 5px;
 }
 
-h1, h2, h3 {
+h2, h3 {
 	color: #111111;
 	font-weight: 700;
-	font-family:'Times New Roman', Times, serif;
+	font-family: 'Corben', Georgia, Times, serif;
 }
 
 h1 {
     text-align: center;
     color: #5C4033;
     font-weight: 700;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Corben', Georgia, Times, serif;
 
 }
 
-.faq-page {
-    text-align: left;
+.faq {
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    box-shadow: 0 0 1em 1em #ccc;
+}
+
+.faq {
+  border: 5px solid #ccc;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+
+}
+
+.container.faq {
+  width:max-content;
+  background-color: #8ca0ff;
+  padding: 2px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .impressum-page {
@@ -68,9 +90,14 @@ h1 {
 
 body > footer {
 	background: #222736;
-	padding: 80px 0 30px;
-	margin-bottom: 30px;
-    text-align: center;
+	padding: 30px 30px;
+	margin: auto;
+  margin-top: 3%;
+  text-align: center;
+  position: bottom;
+  width: 100%;
+  bottom: 0;
+ 
 }
 
 /* Can be added: quick contact information */
@@ -78,6 +105,8 @@ body > footer {
 body > footer {
     display: flex;
     gap: 0.5rem;
+    width:initial;
+    margin-bottom: 0cm;
   }
   
 body > footer a {
@@ -99,30 +128,29 @@ body > footer a {
 
 /* FAQ */
 
-  summary {
-    padding: .5em 1.3rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;  
-    transition:all 3s ease-in-out;
-  }
-  
-  summary::-webkit-details-marker {
-    display: flex;
-  }
-  
-  summary:after{
-    content: "\002B";
-  }
-  
-  details[open] summary {
-      border-bottom: 1px solid #aaa;
-      margin-bottom: .5em;
-      transition:all 3s ease-in-out;
-  }
-  
-  details[open] summary:after{
-    content: "\00D7";
-    transition:all 3s ease-in-out;
 
-  }
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+
+}
+
+summary::-webkit-details-marker {
+  display: flex;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
