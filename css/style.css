@@ -37,13 +37,13 @@ h1 {
 
 }
 
-.faq {
+.container {
     font-size: 18px;
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
     box-shadow: 0 0 1em 1em #ccc;
 }
 
-.faq {
+.container {
   border: 5px solid #ccc;
   padding-left: 5%;
   padding-top: 5%;
@@ -55,7 +55,7 @@ h1 {
 
 }
 
-.container.faq {
+.inhalt.container {
   width:max-content;
   background-color: #8ca0ff;
   padding: 2px;
@@ -68,21 +68,20 @@ h1 {
 }
 
 .impressum-page {
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 16px;
 }
 
 .login-page {
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 .registration-page {
-    text-align: left;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 18px;
 }
 
 
