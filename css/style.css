@@ -81,7 +81,20 @@ h1 {
 
 .registration-page {
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* to add space before: */
+
+.registration-page form label:before {
+  display: block;
+  content: " ";
+  padding-top: 10px;
+}
+
+button{
+  margin-top: 5%;
+  font-size: 16px;
 }
 
 
