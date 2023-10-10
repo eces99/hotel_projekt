@@ -184,6 +184,58 @@ details[open] summary:after{
 }
 
 /* Media Queries for Responsive Design */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+
+  header {
+    width: 200%;
+}
+
+  body > footer{
+    width: 200%;
+  }
+
+  .container {
+    font-size: 38px;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    box-shadow: 0 0 1em 1em #ccc;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 200%;
+}
+
+  .container {
+    border: 5px solid #ccc;
+    padding: 20%;
+    padding-top: 5%;
+    padding-right: 48%;
+    padding-bottom: 2%;
+    
+
+  }
+
+  .inhalt.container {
+    width: 200%;
+    background-color: #8ca0ff;
+    padding: 2%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .faq{
+    font-size: 35px;
+    width: 250%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 768px) {
 
   img{
